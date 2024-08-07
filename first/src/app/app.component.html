@@ -1,8 +1,26 @@
-<div class="grid grid-cols-2 h-screen w-screen font-['Helvetica']">
+<!--<div class="grid grid-cols-2 h-screen w-screen font-['Helvetica']">
   <div class="bg-[#fff] relative h-50 w-50"><div class="absolute inset-0 flex items-center justify-center text-[32px] font-bold">32px bold #ffffff</div></div>
   <div class="bg-[#ffb4b4] h-50 text-center text-[28px] font-medium">28px medium #FFB4B4</div>
   <div class="bg-[#d7f86c] h-50 text-[28px] font-medium flex items-end">28px medium #D7F86C</div>
   <div class="bg-[#65a0fe] h-50 relative"><div class="absolute inset-0 flex items-center justify-center text-[32px] font-bold">32px bold #65A0FE</div></div>
-  <div class="absolute bottom-4 right-5 bg-[#d9d9d9] rounded-2xl font-bold px-10 pt-1 pb-0 border-2 border-black text-[32px]">Flotante</div>
+  <div class="absolute bottom-4 right-5 bg-[#d9d9d9] rounded-2xl font-bold px-10 py-1 border-2 border-black text-[32px]">Flotante</div>
+</div>-->
+<div class="px-[1rem] grid grid-cols-1 gap-[1.5rem]">
+  <div class="text-[32px] font-bold flex items-center justify-center pt-[1rem]">Titulo 32px bold</div>
+  <div>
+    <div class="text-[16px] font-medium bg-[#d9d9d9] rounded-t-[1rem] p-[1rem]">Titulo card 16px medium</div>
+    <div class="h-[20rem] text-[32px] font-medium bg-[#f9f9f9] rounded-b-[1rem] p-[1rem] flex items-center justify-center">Contenido 32px medium</div>
+  </div>
+  <div class="w-1/3">
+    <div class="bg-[#d9d9d9] rounded-t-[1rem] p-[1rem]">Acciones</div>
+    <div class="bg-[#f9f9f9] h-[20rem] rounded-b-[1rem] grid grid-cols-2 content-start">
+      <div class="h-min text-[14px] p-[1rem]">Elemento 1 14px regular</div>
+      <div class="h-min flex justify-end p-[1rem]">Elemento 1</div>
+      <div class="h-min flex justify-center p-[1rem]">Elemento 1</div>
+      <div class="h-min flex justify-center p-[1rem]">Elemento 1</div>
+      <div class="h-min flex justify-end p-[1rem]">Elemento 1</div>
+      <div class="h-min flex justify-start p-[1rem]">Elemento 1</div>
+    </div>
+  </div>
 </div>
 <router-outlet></router-outlet>
