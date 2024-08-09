@@ -8,9 +8,7 @@ import {GestionComponent} from "./pages/gestion/gestion.component";
 
 
 @NgModule({
-  declarations: [
-    EditarComponent, RegistrarComponent, GestionComponent
-  ],
+  declarations: [],
   imports: [
     CommonModule,
     UsuariosRoutingModule

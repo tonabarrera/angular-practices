@@ -1,21 +1,18 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {EditarComponent} from "./pages/editar/editar.component";
-import {RegistrarComponent} from "./pages/registrar/registrar.component";
-import {GestionComponent} from "./pages/gestion/gestion.component";
 
 const routes: Routes = [
   {
     path: 'editar',
-    component: EditarComponent
+    loadComponent: () => import('./pages/editar/editar.component').then(m => m.EditarComponent)
   },
   {
     path: 'registrar',
-    component: RegistrarComponent
+    loadComponent: () => import('./pages/registrar/registrar.component').then(m => m.RegistrarComponent)
   },
   {
     path: 'gestion',
-    component: GestionComponent
+    loadComponent: () => import('./pages/gestion/gestion.component').then(m => m.GestionComponent)
   },
   {
     path: '**',
